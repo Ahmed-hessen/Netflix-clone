@@ -1,0 +1,487 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+header {
+    background-image: url("images/EG-ar-20230717-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+header::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(to bottom ,black,transparent);
+    z-index:0;
+}
+header::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(to top ,black,transparent);
+    z-index: 0;
+}
+/* Start Nav Bar  */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav .left-side{
+    z-index: 3;
+}
+.nav img {
+    width: 150px;
+    height: 65px;
+}
+
+.nav .right-side{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+.nav select {
+    outline: none;
+    padding: 4px 8px 3px 20px;
+    border-radius: 5px;
+    font-size: 11px;
+    color: white;
+    background-color: black;
+    font-weight: 600;
+    cursor: pointer;
+}
+.nav select option {
+    background-color: white;
+    color: black;
+}
+.nav svg {
+    position: absolute;
+    top:7px;
+    left: 8px;
+    color: white;
+    font-size: 12px;
+}
+.nav button {
+    background-color: red;
+    padding: 3px 8px;
+    margin-left: 10px;
+    border-radius: 5px;
+    color: white;
+    outline: none;
+    border: none;
+    font-size: 11px;
+    font-weight: 700;
+    transition: 0.2s;
+}
+.nav button:hover {
+    filter: brightness(80%);
+}
+/* End Nav Bar  */
+/* Start Landing Page  */
+
+.landing{
+    text-align: center;
+    width:80%;
+    margin:120px auto;
+    position: relative;  /*so yo can change z-index  */
+    z-index: 10;
+}
+
+.landing h1{
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+}
+.landing h6 {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.landing p {
+    color: white;
+    text-align: center;
+}
+.form {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width:80%;
+    margin: auto;
+}
+
+.form input {
+    height: 40px;
+    padding: 5px 100px 5px 5px ;
+    background-color: rgb(64, 64, 64);
+    outline: none;
+    border: 1px solid white;
+    border-radius: 3px;
+    color: gray;
+    font-size: 12px;
+}
+.form button {
+    height: 40px;
+    padding: 6px 25px 6px 15px ;
+    background-color: red;
+    border-radius: 3px;
+    color: white;
+    outline: none;
+    border: none;
+    font-weight: 600;
+    transition: 0.2s;
+    margin-left: -5px;
+}
+.form button:hover {
+    filter: brightness(60%);
+}
+@media (max-width:768px){
+    .landing h1{
+        font-size: 35px;
+    }
+    .form{
+        flex-direction: column;
+    }
+    .form button{
+        font-size: 12px;
+    }
+}
+@media (max-width:650px){
+        .landing h1{
+        font-size: 25px;
+    }  .landing h6{
+        font-size: 18px;
+    }
+}
+/* End Landing Page  */
+/* Start Our Story  */
+.our-story {
+    background-color: rgb(12, 12, 12);
+}
+
+.show .text {
+    margin-top: 120px;
+    padding-left: 15%;
+}
+.show .text h2 {
+    font-size: 40px;
+}
+@media (max-width:992px){
+    .show .text {
+        margin-top: 30px;
+    }
+    .show .text p {
+        margin-top: 10px;
+        width: 70%;
+    }
+}
+@media (max-width:768px){
+.show .text h2 {
+    font-size: 24px;
+}
+}
+@media (max-width:480px){
+    .show .text {
+        margin-top: 0;
+    }
+    .show .text p {
+        font-size: 14px;
+} .show .text h2 {
+    font-size: 20px;
+} 
+}
+/* End Our Story  */
+/* Start Qusetions  */
+.frequent-questions{
+    background-color: rgb(13, 0, 13);
+}
+
+.all {
+    width: 85%;
+    margin: auto;
+}
+.frequent-questions p {
+    font-size: 18px;
+}
+.frequent-questions svg {
+    font-size: 18px;
+}
+.qusetion1,.qusetion2,.qusetion3,.qusetion4,.qusetion5,.qusetion6{
+    background-color: rgb(66, 66, 66);
+    width: 100%;
+    color: white;
+    margin-bottom: 50px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.qusetion1:hover,.qusetion2:hover,.qusetion3:hover,.qusetion4:hover,.qusetion5:hover,.qusetion6:hover{
+    filter: brightness(180%);
+}
+.hide-div1,.hide-div2,.hide-div3,.hide-div4,.hide-div5,.hide-div6{
+    background-color: rgb(66, 66, 66);
+    width: 100%;
+    height: auto;
+    color: white;
+    padding: 10px 20px;
+    margin-top: -7px;
+    margin-bottom: 10px;
+    display: none;
+}
+.ready .input {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+}
+.ready input {
+    height: 40px;
+    padding: 5px 100px 5px 5px ;
+    background-color: rgb(64, 64, 64);
+    outline: none;
+    border: 1px solid green;
+    border-radius: 4px;
+    color: gray;
+    font-size: 12px;
+}
+.ready button {
+    height: 40px;
+    padding: 6px 25px 6px 15px ;
+    background-color: red;
+    border-radius: 3px;
+    color: white;
+    outline: none;
+    border: none;
+    font-weight: 600;
+    transition: 0.2s;
+    margin-left: -5px;
+}
+.ready button:hover {
+    filter: brightness(60%);
+}
+
+@media (max-width:768px){
+    .show .text {
+        margin-top: 130px;
+        padding-left: 20%;
+    }
+}
+@media (max-width:480px){
+    .ready .input {
+        flex-direction: column;
+    }.ready button{
+        font-size: 13px;
+    }.frequent-questions p{
+        font-size: 12px;
+    }.frequent-questions svg {
+        font-size: 12px;
+    }.show .text {
+        padding-left: 25%;
+    }
+}
+
+/* End Questions  */
+/* Start Footer  */
+footer {
+    background-color:rgb(13, 0, 13); 
+    color: white;
+    width: 82%;
+    margin: auto;
+}
+footer a {
+    font-size: 10px;
+}
+.language {
+    position: relative;
+}
+.language select option {
+    background-color: white;
+    color: black;
+}
+.language select {
+    font-size: 12px;
+    background-color: black;
+    color: white;
+    padding: 2px 5px;
+    outline: none;
+    padding: 3px 8px 3px 20px;
+}
+
+
+
+/* End Footer  */
+/* Start Sign In Page  */
+.container-sign {
+    background-image: url("images/EG-ar-20230717-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    filter:brightness(80%);
+    z-index: 1;
+}
+.sign {
+    max-width: 350px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 50px 40px 50px 40px;
+    border-radius: 5px;
+}
+.sign h3 {
+    color: white;
+}
+.sign input::placeholder{
+    font-size: 10px;
+}
+.sign input#email {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: white;
+    outline: none;
+    border: none;
+}
+.sign input#pass {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color:white;
+    outline: none;
+    border: none;
+}
+.sign input#submit {
+    background-color: red;
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    margin-bottom: 10px;  
+    margin-top: 10px; 
+}
+.sign input#submit:hover{
+    filter: brightness(80%);
+}
+.remember{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.check label {
+        font-size: 12px;
+        color: gray;
+}
+
+.check input#check:checked{
+    accent-color: gray;
+}
+.remember a {
+    text-decoration: none;
+    color: gray;
+    font-size: 12px;
+}
+
+.sign-form p.net-flix {
+    font-size: 13px;
+    color: gray;
+    margin-bottom: 12px;
+}
+.sign-form p.net-flix a{
+    font-size: 13px;
+    text-decoration: none;
+    color: white;
+    margin-left: 5px;
+    margin-top: 20px;
+}
+.sign-form p.net-flix a:hover{
+    text-decoration:underline;
+}
+.sign-form p.page{
+    font-size: 12px;
+    color: gray;
+    line-height: 1.4;
+}
+.sign-form p.page a {
+    font-size: 12px;
+    text-decoration: none;
+    color:blue;
+}
+.sign-form p.page a:hover{
+    text-decoration:underline;
+}
+.sign-form a:hover{
+    text-decoration:underline;
+}
+@media (max-width:480px){
+    .sign {
+        padding: 20px 20px 35px 20px;
+        width: 100%;
+    }
+    .sign input#email,.sign input#pass,.sign input#submit{
+        padding: 5px;
+    } .sign input#submit{
+        margin-top: 0;
+    }.remember{
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+/* End Sign Form  */
+
+/* Start Films Page  */
+.container-films {
+    background-color: black;
+}
+.container-films a {
+    color: white;
+    transition: 0.3s;
+}
+.container-films a:hover {
+    color: red;
+}
+.container-films .buttons {
+    margin: 150px 5px 50px 20px;
+}
+.container-films button {
+    background-color: rgb(75, 75, 75);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    letter-spacing: 1px;
+    transition: 0.5s;
+    margin-right: 5px;
+}
+.container-films button:hover {
+    transform: translateY(5px);
+}
+@media (max-width:768px){
+    .container-films .navbar-nav a.nav-link {
+        text-align: center;
+    }
+}

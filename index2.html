@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Api Films </title>
+    <!-- MDB bootstrap  -->
+    <link rel="stylesheet" href="mdb.min.css">
+    <!-- Custome CSS  -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="myfilms" class="container-films">
+        <!-- Start Nav Bar  -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="#"><img src="images/Netflix_Logo_PMS.png" style="width: 150px;height: 65px;"></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-mdb-toggle="collapse"
+            data-mdb-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              <a class="nav-link" href="#">TV Shows</a>
+              <a class="nav-link" href="#">Movies</a>
+              <a class="nav-link" href="#">New&Popular</a>
+              <a class="nav-link" href="#">My List</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- End Nav Bar  -->
+      <!-- Start Film Section  -->
+      <div class="film-section mt-5 p-4">
+        <div class="container">
+            <h3 id="title" style="color:white;"></h3>
+            <div class="buttons">
+                <button class="watch">Watch</button>
+                <button class="my-list">My list</button>
+            </div>
+            <p id="description" style="color: white;"></p>
+    </div>
+      </div>
+    </div>
+<!-- End Film Section  -->
+<!-- Start Footer  -->
+    <footer class="text-center text-lg-start" style="background-color: black;width: 100%;">
+        <div class="container p-4">
+            <a href="#" class="text-white-50">Questions? Contact us.</a>
+            <div class="row mt-3">
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">          
+                  <ul class="list-unstyled mb-0">
+                    <li>
+                      <a href="#!" class="text-white-50">FAQ</a>
+                    </li>
+                    <li>
+                      <a href="#!" class="text-white-50">Investor Relations</a>
+                    </li>
+                    <li>
+                      <a href="#!" class="text-white-50">Privacy</a>
+                    </li>
+                    <li>
+                      <a href="#!" class="text-white-50">Speed Test</a>
+                    </li>
+                  </ul>
+                </div>
+                <!--Grid column-->
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="#!" class="text-white-50">Help Center</a>
+                    </li>
+                    <li>
+                      <a href="#!" class="text-white-50"> Jobs</a>
+                    </li>
+                    <li>
+                      <a href="#!" class="text-white-50">Cookie Preferences</a>
+                    </li>
+                    <li>
+                      <a href="#!" class="text-white-50">Legal Notices</a>
+                    </li>
+                  </ul>
+                </div>
+                <!--Grid column-->
+          
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                  <ul class="list-unstyled mb-0">
+                    <li>
+                      <a href="#!" class="text-white-50">Account</a>
+                    </li>
+                    <li>
+                      <a href="#!" class="text-white-50">Ways to Watch</a>
+                    </li>
+                    <li>
+                      <a href="#!" class="text-white-50">Corporate Information</a>
+                    </li>
+                    <li>
+                      <a href="#!" class="text-white-50">Only on Netflix</a>
+                    </li>
+                  </ul>
+                </div>
+                <!--Grid column-->
+          
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">          
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="#!" class="text-white-50">Media Center</a>
+                    </li>
+                    <li>
+                      <a href="#!" class="text-white-50">Terms of Use</a>
+                    </li>
+                    <li>
+                      <a href="#!" class="text-white-50">Contact Us</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="language mt-3">
+                    <select id="language-Select">
+                        <option value="en">English</option>
+                        <option value="ar">العربية</option>
+                    </select>
+                    <p class="mt-3 text-white-50"style="font-size: 10px;">Netflix Egypt</p>
+        </div>
+    </footer>
+
+    <!-- End Footer  -->
+    <!-- MDB bootstrap  -->
+    <script src="mdb.min.js"></script>
+  
+      </script>
+    <!-- Custome JS  -->
+    <script src="api.js"></script>
+</body>
+</html>

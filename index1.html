@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+     <!-- Fontawesome CSS -->
+     <link rel="stylesheet" href="Fontawesome library/all.min.css">
+     <!-- MDB bootstrap  -->
+     <link rel="stylesheet" href="mdb.min.css">
+     <!-- Bootstrap  -->
+     <link rel="stylesheet" href="bootstrap-5.3.0-dist-library/css/bootstrap.min.css">
+     <!-- Custome CSS  -->
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-sign">
+        <div class="sign">
+            <form onsubmit="return formValidate()">
+            <h3>Sign In</h3>
+            <p id="error" style="color: orange; font-size: 14px;"></p><br>
+            <div class="sign-form">
+                <input name="email" type="text" id="email" placeholder="Email or phone number "><br><br>
+                <input name="password" type="password" id="pass" placeholder="Password"><br><br>
+                <input type="submit" id="submit" value="sign in">
+            </form>
+                <div class="remember">
+                    <div class="check"> <input type="checkbox" id="check" ><label>Remember me </label> </div> 
+                    <a href="#">Need help?</a>
+                </div>
+                <p class="net-flix">New to Netflix?<a href="index.html">Sign up now.</a></p>
+                <p class="page">This page is protected by Google reCAPTCHA to ensure you're not a bot. <a href="#">Learn more.</a> </p>
+            </div>
+        
+        </div>
+    </div>
+    <!-- Fontawesome Js  -->
+    <script src="Fontawesome library/all.min.js"></script>
+    <!-- MDB bootstrap  -->
+    <script src="mdb.min.js"></script>
+    <!-- Bootstrap  -->
+    <script src="bootstrap-5.3.0-dist-library/js/bootstrap.bundle.min.js"></script>
+    <!-- Custome JS  -->
+    <script src="sign.js"></script>
+</body>
+</html>
